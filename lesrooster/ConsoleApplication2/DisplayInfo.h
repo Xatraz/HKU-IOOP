@@ -5,7 +5,6 @@ private:
 	int width, height;
 
 public:
-	DisplayInfo();
+	DisplayInfo(int width, int height);
 	~DisplayInfo();
 };
-

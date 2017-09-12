@@ -8,7 +8,9 @@ private:
 public:
 	char Date(int d, int m, int y);
 	Input(char yrcl, char dprt, char date);
-	Input();
+	void changeYearAndClass();
+	void changeDepartment();
+	void changeDate();
 	~Input();
 };
 
