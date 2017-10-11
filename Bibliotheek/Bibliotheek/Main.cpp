@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Bibliotheek.h";
+#include "Bibliotheek.h"
 
 using namespace std;
 
@@ -19,7 +19,7 @@ int main()
 	bibliotheek->toon();
 
 	geefBoeken(bibliotheek);
-	bibliotheek->toon;
+	bibliotheek->toon();
 
 	char c;
 	cin >> c;
