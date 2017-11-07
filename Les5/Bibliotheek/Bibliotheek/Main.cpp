@@ -41,7 +41,11 @@ int main()
 	bib2 = bib1;
 
 	std::cout << "---Bib2" << std::endl;
+	bib2.voegToe("Some Other Book");
 	bib2.toon();
+
+	std::cout << "---Bib1" << std::endl;
+	bib1.toon();
 
 	char c;
 	cin >> c;

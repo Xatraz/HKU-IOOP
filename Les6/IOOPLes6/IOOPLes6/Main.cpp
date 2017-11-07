@@ -36,7 +36,7 @@ int main() {
 	*/
 
 	std::ofstream out_stream;
-	out_stream.open("D:/Documenten/Visual Studio/IOOPLes6/testout.txt");
+	out_stream.open("D:/Documenten/HKU-IOOP/Les6/IOOPLes6/testout.txt");
 	if (!out_stream) {
 		std::cout << "Probleem bij openen file" << std::endl;
 		exit(1);
@@ -52,6 +52,11 @@ int main() {
 		skip = !skip;
 		if (!skip) {
 			out_stream << ch;
+		}
+	}
+	while (!in_stream.eof()) {
+		for (int a = in_stream.gcount) {
+
 		}
 	}
 
