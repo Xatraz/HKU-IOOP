@@ -1,8 +1,9 @@
 #pragma once
-class Cat
-{
-public:
-	Cat();
-	~Cat();
-};
 
+#include "Animal.h"
+
+class Cat : public Animal {
+public:
+	Cat(std::string name);
+	void makeNoise();
+};

@@ -1,3 +1,9 @@
 #include "Cat.h"
 
-Cat::Cat(const std::string name) : Animal(name);
+#include <iostream>
+
+void Cat::makeNoise() {
+	std::cout << "Miaow" << std::endl;
+}
+
+Cat::Cat(std::string name) : Animal(name) {}

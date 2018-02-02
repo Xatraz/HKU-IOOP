@@ -1,16 +1,31 @@
 #include <iostream>
-#include <Animal.h>
-#include <Cat.h>
+#include <vector>
+#include "Animal.h"
+#include "Dog.h"
+#include "Cat.h"
+
+void saySomething(Animal& animal) {
+	animal.makeNoise();
+	animal.feed();
+}
+
+void saySomething(Animal* animal) {
+	animal->makeNoise();
+}
 
 int main() {
-	//Animal animal = Animal("Beast");
-	//animal makeNoise();
+	Dog animal2 = Dog("Pluto");
+	Cat animal3 = Cat("Felix");
 
-	Cat cat = Cat("Felix");
-	cat.makeNoise();
+	animal2.makeNoise();
+	animal3.makeNoise();
 
-	Dog dog = Dog("Sivert");
-	dog.makeNoise();
+	saySomething(animal2);
+	std::cout << animal2.isHungry() << std::endl;
+	saySomething(animal3);
+	std::cout << animal2.isHungry() << std::endl;
 
+	char c;
+	std::cin >> c;
 	return 0;
 }
