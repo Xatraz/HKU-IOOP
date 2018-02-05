@@ -7,6 +7,6 @@ class Boek
 public:
 	Boek(std::string type);
 	Boek();
-	std::string _type = "onbekent";
+	std::string _type = "onbekend";
 	virtual~Boek();
 };

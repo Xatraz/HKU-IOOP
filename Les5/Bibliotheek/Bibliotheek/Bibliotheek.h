@@ -1,4 +1,5 @@
 #pragma once
+#include <vector>
 #include "Boek.h"
 
 class Bibliotheek
@@ -14,5 +15,6 @@ public:
 	void voegToe(std::string type);
 	void leenUit(std::string type);
 private:
-	Boek* boek = new Boek();
+	//Boek* = new Boek();
+	std::vector<Boek*> boeken;
 };

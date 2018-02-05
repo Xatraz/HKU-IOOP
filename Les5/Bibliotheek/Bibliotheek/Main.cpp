@@ -16,6 +16,7 @@ int main()
 	Bibliotheek* bibliotheek = new Bibliotheek("Nieuwe Bibliotheek");
 	bibliotheek->toon();
 	bibliotheek->voegToe("Harry Potter");
+	bibliotheek->voegToe("Barry Poter");
 	bibliotheek->toon();
 
 	geefBoeken(bibliotheek);
@@ -46,6 +47,9 @@ int main()
 
 	std::cout << "---Bib1" << std::endl;
 	bib1.toon();
+
+	delete bibliotheek;
+
 
 	char c;
 	cin >> c;
